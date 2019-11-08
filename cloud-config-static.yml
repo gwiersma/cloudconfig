@@ -6,7 +6,7 @@ rancher:
       - 172.10.50.11
 
     interfaces:
-      eth1:
+      eth0:
         address: 172.10.40.41/24
         gateway: 172.10.40.254
         mtu: 1500
