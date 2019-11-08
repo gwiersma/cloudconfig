@@ -6,7 +6,7 @@ rancher:
       - 172.10.50.11
 
     interfaces:
-      eth1:
+      eth0:
         mtu: 1500
         dhcp: true
         post_up:
