@@ -1,0 +1,13 @@
+#cloud-config
+rancher:
+  network:
+    dns:
+      nameservers:
+      - 172.10.50.11
+
+    interfaces:
+      eth1:
+        mtu: 1500
+        dhcp: true
+        post_up:
+        - ip route add 172.10.0.0/18 via 172.10.40.1
